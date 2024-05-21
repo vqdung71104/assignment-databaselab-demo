@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+body {
+  color: #333;
+  font-family: Helvetica,sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+
+/* Layout */
+.list {
+  margin: 30px auto;
+  width: 1140px;
+}
+.list li {
+  background-color: #f8f8f8;
+  float: left;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  padding: 25px 15px;
+  text-align: center;
+  width: 330px;
+}
+.list li:nth-child(3n) {
+  margin-right: 0;
+}
+.list li:nth-child(3n+1) {
+  clear: left;
+}
+.list li .icon {
+  border: 2px solid #399;
+  border-radius: 50%;
+  color: #399;
+  font-size: 28px;
+  display: inline-block;
+  height: 71px;
+  line-height: 78px;
+  margin-bottom: 15px;
+  text-align: center;
+  width: 71px;
+}
+.list li h3 {
+  margin-bottom: 20px;
+}
+.list li .text {
+  color: #5b5b5b;
+  font-size: 14px;
+}
+
+.list li form label {
+  text-align: left;
+  margin-left: 0;
+  padding: auto;
+}
+
+.list li form input,
+.list li form button {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
