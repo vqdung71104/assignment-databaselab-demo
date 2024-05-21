@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Học web chuẩn</title>
+<link rel="stylesheet" href="/exercises/css/fontawesome.css" media="all">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <ul class="list">
+    <button class="btn" type="button" onclick="showData('Doanh thu', '1000000')">
+      <li>
+        <p class="icon"><i class="fa-solid fa-money-bill"></i></p>
+        <h3>Doanh thu</h3>
+        <p id="revenue">Đang cập nhật...</p>
+      </li>
+    </button>
+
+    <button class="btn" type="button" onclick="showData('Lợi nhuận', '500000')">
+      <li>
+        <p class="icon"><i class="fa-sharp fa-solid fa-chart-column"></i></p>
+        <h3>Lợi nhuận</h3>
+        <p id="profit">Đang cập nhật...</p>
+      </li>
+    </button> 
+    
+    <button class="btn" type="button" onclick="showInventoryList()">
+      <li>
+        <p class="icon"><i class="fa-solid fa-house"></i></p>
+        <h3>Hàng còn tại cửa hàng</h3>
+        <p id="inventory">Đang cập nhật...</p>
+      </li>
+    </button>
+
+    <button class="btn" type="button" onclick="showData('Danh sách khách hàng', '100')">
+      <li>
+        <p class="icon"><i class="fa-brands fa-creative-commons-by"></i></p>
+        <h3>Danh sách khách hàng</h3>
+        <p id="customers">Đang cập nhật...</p>
+      </li>
+    </button>  
+      
+    
+      <li>
+        <p class="icon"><i class="fa-solid fa-plus"></i></p>
+        <h3>Thêm sản phẩm</h3>
+        <div class="form-container">
+          <form>
+            <label for="product-id">ID sản phẩm:</label>
+            <input type="text" id="product-id" name="product-id"><br>
+            
+            <label for="name">Tên sản phẩm:</label>
+            <input type="text" id="name" name="name"><br>
+
+            <label for="price1">Giá nhập vào:</label>
+            <input type="text" id="price1" name="price1"><br>
+
+            <label for="add-quantity">Số lượng:</label>
+            <input type="text" id="add-quantity" name="add-quantity"><br>
+
+            <label for="add-date">Ngày nhập hàng:</label>
+            <input type="datetime" id="add-date" name="add-date"><br>
+            
+            <button type="submit">Thêm sản phẩm</button>
+          </form>
+        </div>
+      </li>
+    
+
+    
+      <li>
+        <p class="icon"><i class="fa-solid fa-cart-shopping"></i></p>
+        <h3>Nhập thông tin mua hàng</h3>
+        <form>
+          <label for="product-id">ID sản phẩm:</label>
+          <input type="text" id="product-id" name="product-id"><br>
+
+          <label for="price2">Giá bán ra:</label>
+          <input type="text" id="price2" name="price2"><br>
+          
+          <label for="buy-quantity">Số lượng:</label>
+          <input type="text" id="buy-quantity" name="buy-quantity"><br>
+
+          <label for="customer">Khách hàng:</label>
+          <input type="text" id="customer" name="customer"><br>
+
+          <label for="buy-time">Ngày bán:</label>
+          <input type="datetime" id="buy-time" name="buy-time"><br>
+          
+          <button type="submit">Mua hàng</button>
+        </form>
+      </li>
+  
+      
+    
+  
+  </ul>
+
+  <script>
+    function showData(title, data) {
+      document.getElementById(title.toLowerCase()).textContent = data;
+    }
+  </script>
+
+  <script src="main.js"></script>
+</body>
+</html>
